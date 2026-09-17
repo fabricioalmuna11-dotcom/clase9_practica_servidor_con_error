@@ -17,7 +17,7 @@ infoRouter.get('/info', (req, res) => {
       <li>GET /api/mascotas/:id → Mascota por ID</li>
       <li>GET /info → Información de rutas</li>
       <li>POST /api/mascotas/ → Crear mascota</li>
-      <li>PUT /api/mascotas/:id → Actualizar mascota</li>
+      <li>PATCH /api/mascotas/:id → Actualizar mascota</li>
       <li>DELETE /api/mascotas/:id → Eliminar mascota</li>
     </ul>
   `)

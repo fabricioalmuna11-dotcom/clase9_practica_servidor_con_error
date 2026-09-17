@@ -27,7 +27,7 @@ mascotasRouter.get('/', async (req, res, next) => {
 
 // Ruta para ver una mascota por ID
 mascotasRouter.get('/:id', async (req, res, next) => {
-  const id = req.params.id
+  const id = Number(req.params.id)
   leerMascotas()
     .then(mascotas => {
       const mascota = mascotas.find(m => m.id === id)
@@ -59,7 +59,7 @@ mascotasRouter.post('/', async (req, res, next) => {
 
 // PATCH modificar Mascotas
 mascotasRouter.patch('/:id', async (req, res, next) => {
-  const id = parseInt(req.params.id)
+  const id = Number(req.params.id)
   const { nombre, tipo } = req.body
   leerMascotas()
     .then(mascotas => {
@@ -76,7 +76,7 @@ mascotasRouter.patch('/:id', async (req, res, next) => {
 
 // DELETE by id
 mascotasRouter.delete('/:id', async (req, res, next) => {
-  const id = req.params.id
+  const id = Number(req.params.id)
   leerMascotas()
     .then(mascotas => {
       const index = mascotas.findIndex(m => m.id === id)
