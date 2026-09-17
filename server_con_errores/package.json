@@ -2,10 +2,11 @@
   "name": "server_con_errores",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js",
+    "test": "node --test",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
