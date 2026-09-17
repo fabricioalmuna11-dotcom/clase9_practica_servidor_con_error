@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" href="https://emojiapi.dev/api/v1/dog_face.svg" type="image/png">
     <title>Formulario Mascota</title>
   </head>
   <body>
@@ -15,18 +14,21 @@
         <button id="btnRutas">Info sobre los endpoints</button>
         <button id="btnDatos">Obtener toda la información persistida</button>
       </div>
-      <pre id="resultado"></pre>
+      <pre id="resultado" role="status" aria-live="polite"></pre>
+      <ul id="listaMascotas"></ul>
     </section>
 
     <section>
-      <h1>Agreagar una nueva Mascota - desde el cliente frontend con fetch</h1>
-      <form id="formMascotas" action="" method="">
+      <h1>Crear o editar una mascota</h1>
+      <form id="formMascotas">
+        <input type="hidden" id="mascotaId" />
         <label for="nombre">Nombre:</label>
         <input type="text" id="nombre" name="nombre" required />
 
         <label for="tipo">Tipo:</label>
         <input type="text" id="tipo" name="tipo" required />
-        <button type="submit">Crear Mascota</button>
+        <button type="submit" id="btnGuardar">Crear Mascota</button>
+        <button type="button" id="btnCancelar" hidden>Cancelar edición</button>
       </form>
     </section>
     <script src="script.js"></script>
