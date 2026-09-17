@@ -1,0 +1,5 @@
+# Node Moules
+node_modules/
+
+# Nuestras variables de entorno
+.env

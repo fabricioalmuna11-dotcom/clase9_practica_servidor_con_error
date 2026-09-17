@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "nombre": "Luna",
+    "tipo": "Perro"
+  },
+  {
+    "id": 2,
+    "nombre": "Milo",
+    "tipo": "Gato"
+  },
+  {
+    "id": 3,
+    "nombre": "Nina",
+    "tipo": "Conejo"
+  }
+]

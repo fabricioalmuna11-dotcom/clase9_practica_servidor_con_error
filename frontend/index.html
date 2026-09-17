@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="https://emojiapi.dev/api/v1/dog_face.svg" type="image/png">
+    <title>Formulario Mascota</title>
+  </head>
+  <body>
+    <section>
+      <h2>Acciones disponibles</h2>
+      <div class="botonera">
+        <button id="btnBienvenida">Bienvenida de la API Mascotas</button>
+        <button id="btnRutas">Info sobre los endpoints</button>
+        <button id="btnDatos">Obtener toda la información persistida</button>
+      </div>
+      <pre id="resultado"></pre>
+    </section>
+
+    <section>
+      <h1>Agreagar una nueva Mascota - desde el cliente frontend con fetch</h1>
+      <form id="formMascotas" action="" method="">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="tipo">Tipo:</label>
+        <input type="text" id="tipo" name="tipo" required />
+        <button type="submit">Crear Mascota</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
