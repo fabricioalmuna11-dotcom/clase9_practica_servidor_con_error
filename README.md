@@ -50,3 +50,7 @@ No se olviden de ir documentando el error, que pasó y como lo solucionaron.
 
 
 Gracias por ser parte del proyecto ❤️
+
+## Solución de esta copia
+
+Ver [SOLUCION.md](SOLUCION.md) para las correcciones, ejecución, pruebas y estado de entrega.
